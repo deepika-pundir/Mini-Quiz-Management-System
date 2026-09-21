@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const API = "http://localhost:8080/api";
+const API = "https://mini-quiz-management-system-1.onrender.com";
 
 function App() {
   const [page, setPage] = useState("admin");
