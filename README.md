@@ -2,9 +2,8 @@
 
 A full-stack Quiz Management System built using **React, Java, Spring Boot, and MongoDB**.
 <img width="1920" height="926" alt="Screenshot 2026-09-21 155032" src="https://github.com/user-attachments/assets/3ee514a7-d03e-438b-87ac-fbc1e904c0ac" />
-# Backend : https://mini-quiz-management-system-1.onrender.com
-
-# Frontend : mini-quiz-management-system-5nlexkne6-deepika-pundir.vercel.app
+ Backend : https://mini-quiz-management-system-1.onrender.com
+ 
 
 
 ### Admin
