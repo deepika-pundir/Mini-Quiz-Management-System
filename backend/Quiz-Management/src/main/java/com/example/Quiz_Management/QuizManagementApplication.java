@@ -7,6 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class QuizManagementApplication {
 
 	public static void main(String[] args) {
+		//SpringApplication.run(QuizManagementApplication.class, args);
+		System.out.println("=== DEBUG: SPRING_DATA_MONGODB_URI env value is: [" + System.getenv("SPRING_DATA_MONGODB_URI") + "] ===");
 		SpringApplication.run(QuizManagementApplication.class, args);
 	}
 
