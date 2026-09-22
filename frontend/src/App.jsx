@@ -19,7 +19,7 @@ function App() {
 
   const loadQuestions = async () => {
     try {
-      const res = await fetch(`${API}/questions`);
+      const res = await fetch(`${API}/api/questions`);
       const data = await res.json();
       setQuestions(data);
     } catch {
@@ -51,7 +51,7 @@ function App() {
     }
 
     try {
-      const res = await fetch(`${API}/questions`, {
+      const res = await fetch(`${API}/api/questions`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -83,7 +83,7 @@ function App() {
     if (!window.confirm("Delete this question?")) return;
 
     try {
-      const res = await fetch(`${API}/questions/${id}`, {
+      const res = await fetch(`${API}/api/questions/${id}`, {
         method: "DELETE",
       });
 
