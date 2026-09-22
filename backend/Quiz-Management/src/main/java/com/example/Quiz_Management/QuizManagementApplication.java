@@ -1,15 +1,16 @@
+
 package com.example.Quiz_Management;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
 public class QuizManagementApplication {
 
 	public static void main(String[] args) {
-		//SpringApplication.run(QuizManagementApplication.class, args);
-		System.out.println("=== DEBUG: SPRING_DATA_MONGODB_URI env value is: [" + System.getenv("SPRING_DATA_MONGODB_URI") + "] ===");
-		SpringApplication.run(QuizManagementApplication.class, args);
+		ConfigurableApplicationContext context = SpringApplication.run(QuizManagementApplication.class, args);
+		System.out.println("=== DEBUG2: Spring resolved spring.data.mongodb.uri as: [" + context.getEnvironment().getProperty("spring.data.mongodb.uri") + "] ===");
 	}
 
 }
